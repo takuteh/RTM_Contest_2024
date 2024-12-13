@@ -1,0 +1,54 @@
+# Turning_Module CMake config file
+#
+# This file sets the following variables:
+# Turning_Module_FOUND - Always TRUE.
+# Turning_Module_INCLUDE_DIRS - Directories containing the Turning_Module include files.
+# Turning_Module_IDL_DIRS - Directories containing the Turning_Module IDL files.
+# Turning_Module_LIBRARIES - Libraries needed to use Turning_Module.
+# Turning_Module_DEFINITIONS - Compiler flags for Turning_Module.
+# Turning_Module_VERSION - The version of Turning_Module found.
+# Turning_Module_VERSION_MAJOR - The major version of Turning_Module found.
+# Turning_Module_VERSION_MINOR - The minor version of Turning_Module found.
+# Turning_Module_VERSION_REVISION - The revision version of Turning_Module found.
+# Turning_Module_VERSION_CANDIDATE - The candidate version of Turning_Module found.
+
+message(STATUS "Found Turning_Module-@PROJECT_VERSION@")
+set(Turning_Module_FOUND TRUE)
+
+find_package(<dependency> REQUIRED)
+
+#set(Turning_Module_INCLUDE_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@"
+#    ${<dependency>_INCLUDE_DIRS}
+#    )
+#
+#set(Turning_Module_IDL_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@/idl")
+set(Turning_Module_INCLUDE_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@"
+    ${<dependency>_INCLUDE_DIRS}
+    )
+set(Turning_Module_IDL_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@/idl")
+
+
+if(WIN32)
+    set(Turning_Module_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_STATIC_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+else(WIN32)
+    set(Turning_Module_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_SHARED_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+endif(WIN32)
+
+set(Turning_Module_DEFINITIONS ${<dependency>_DEFINITIONS})
+
+set(Turning_Module_VERSION @PROJECT_VERSION@)
+set(Turning_Module_VERSION_MAJOR @PROJECT_VERSION_MAJOR@)
+set(Turning_Module_VERSION_MINOR @PROJECT_VERSION_MINOR@)
+set(Turning_Module_VERSION_REVISION @PROJECT_VERSION_REVISION@)
+set(Turning_Module_VERSION_CANDIDATE @PROJECT_VERSION_CANDIDATE@)
+

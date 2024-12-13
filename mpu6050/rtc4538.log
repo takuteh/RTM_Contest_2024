@@ -1,0 +1,23 @@
+2024-10-22 09:38:31,496 file.manager INFO 2.0.2
+2024-10-22 09:38:31,497 file.manager INFO Copyright (C) 2003-2024, Noriaki Ando and OpenRTM development team,
+2024-10-22 09:38:31,497 file.manager INFO   Intelligent Systems Research Institute, AIST,
+2024-10-22 09:38:31,497 file.manager INFO Copyright (C) 2024, Noriaki Ando and OpenRTM development team,
+2024-10-22 09:38:31,497 file.manager INFO   Industrial Cyber-Physical Research Center, AIST,
+2024-10-22 09:38:31,497 file.manager INFO   All right reserved.
+2024-10-22 09:38:31,498 file.manager INFO Manager starting.
+2024-10-22 09:38:31,498 file.manager INFO Starting local logging.
+2024-10-22 09:38:31,504 file.manager.namingmanager INFO NameServer connection succeeded: corba/localhost
+2024-10-22 09:38:31,520 file.ManagerServant INFO Master manager not found
+2024-10-22 09:38:31,523 file.LocalServiceAdmin INFO All the local services are enabled.
+2024-10-22 09:38:31,533 file.manager INFO Component type conf file: mpu6050.conf loaded.
+2024-10-22 09:38:31,537 file.ec_base INFO setRate(1000000.000000) done
+2024-10-22 09:38:31,538 file.ec_base INFO setRate(1000.000000) done
+2024-10-22 09:38:31,540 file.rtobject INFO 1 execution context was created.
+2024-10-22 09:38:31,543 file.rtobject INFO Initial active configuration set is default.
+2024-10-22 09:38:41,588 file.ManagerServant INFO Master manager not found
+2024-10-22 09:38:42,778 file.SdoServiceAdmin WARNING No available SDO service in the factory: 
+2024-10-22 09:38:42,779 file.SdoServiceAdmin ERROR type  not exists.
+2024-10-22 09:38:51,680 file.ManagerServant INFO Master manager not found
+2024-10-22 09:39:01,733 file.ManagerServant INFO Master manager not found
+2024-10-22 09:39:11,793 file.ManagerServant INFO Master manager not found
+2024-10-22 09:39:21,869 file.ManagerServant INFO Master manager not found

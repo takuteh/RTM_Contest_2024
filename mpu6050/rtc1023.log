@@ -1,0 +1,21 @@
+2024-10-22 09:08:29,348 file.manager INFO 2.0.2
+2024-10-22 09:08:29,381 file.manager INFO Copyright (C) 2003-2024, Noriaki Ando and OpenRTM development team,
+2024-10-22 09:08:29,381 file.manager INFO   Intelligent Systems Research Institute, AIST,
+2024-10-22 09:08:29,382 file.manager INFO Copyright (C) 2024, Noriaki Ando and OpenRTM development team,
+2024-10-22 09:08:29,382 file.manager INFO   Industrial Cyber-Physical Research Center, AIST,
+2024-10-22 09:08:29,382 file.manager INFO   All right reserved.
+2024-10-22 09:08:29,382 file.manager INFO Manager starting.
+2024-10-22 09:08:29,382 file.manager INFO Starting local logging.
+2024-10-22 09:08:29,387 file.manager.namingmanager INFO NameServer connection succeeded: corba/localhost
+2024-10-22 09:08:29,401 file.ManagerServant INFO Master manager not found
+2024-10-22 09:08:29,403 file.LocalServiceAdmin INFO All the local services are enabled.
+2024-10-22 09:08:29,414 file.manager INFO Component type conf file: mpu6050.conf loaded.
+2024-10-22 09:08:29,418 file.ec_base INFO setRate(1000000.000000) done
+2024-10-22 09:08:29,419 file.ec_base INFO setRate(1000.000000) done
+2024-10-22 09:08:29,420 file.rtobject INFO 1 execution context was created.
+2024-10-22 09:08:29,423 file.rtobject INFO Initial active configuration set is default.
+2024-10-22 09:08:39,469 file.ManagerServant INFO Master manager not found
+2024-10-22 09:08:49,500 file.ManagerServant INFO Master manager not found
+2024-10-22 09:08:59,539 file.ManagerServant INFO Master manager not found
+2024-10-22 09:09:09,577 file.ManagerServant INFO Master manager not found
+2024-10-22 09:09:19,646 file.ManagerServant INFO Master manager not found

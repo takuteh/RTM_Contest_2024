@@ -1,0 +1,54 @@
+# env_analysis CMake config file
+#
+# This file sets the following variables:
+# env_analysis_FOUND - Always TRUE.
+# env_analysis_INCLUDE_DIRS - Directories containing the env_analysis include files.
+# env_analysis_IDL_DIRS - Directories containing the env_analysis IDL files.
+# env_analysis_LIBRARIES - Libraries needed to use env_analysis.
+# env_analysis_DEFINITIONS - Compiler flags for env_analysis.
+# env_analysis_VERSION - The version of env_analysis found.
+# env_analysis_VERSION_MAJOR - The major version of env_analysis found.
+# env_analysis_VERSION_MINOR - The minor version of env_analysis found.
+# env_analysis_VERSION_REVISION - The revision version of env_analysis found.
+# env_analysis_VERSION_CANDIDATE - The candidate version of env_analysis found.
+
+message(STATUS "Found env_analysis-@PROJECT_VERSION@")
+set(env_analysis_FOUND TRUE)
+
+find_package(<dependency> REQUIRED)
+
+#set(env_analysis_INCLUDE_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@"
+#    ${<dependency>_INCLUDE_DIRS}
+#    )
+#
+#set(env_analysis_IDL_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@/idl")
+set(env_analysis_INCLUDE_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@"
+    ${<dependency>_INCLUDE_DIRS}
+    )
+set(env_analysis_IDL_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@/idl")
+
+
+if(WIN32)
+    set(env_analysis_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_STATIC_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+else(WIN32)
+    set(env_analysis_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_SHARED_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+endif(WIN32)
+
+set(env_analysis_DEFINITIONS ${<dependency>_DEFINITIONS})
+
+set(env_analysis_VERSION @PROJECT_VERSION@)
+set(env_analysis_VERSION_MAJOR @PROJECT_VERSION_MAJOR@)
+set(env_analysis_VERSION_MINOR @PROJECT_VERSION_MINOR@)
+set(env_analysis_VERSION_REVISION @PROJECT_VERSION_REVISION@)
+set(env_analysis_VERSION_CANDIDATE @PROJECT_VERSION_CANDIDATE@)
+

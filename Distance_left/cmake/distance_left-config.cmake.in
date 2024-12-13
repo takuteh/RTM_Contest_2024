@@ -1,0 +1,54 @@
+# Distance_left CMake config file
+#
+# This file sets the following variables:
+# Distance_left_FOUND - Always TRUE.
+# Distance_left_INCLUDE_DIRS - Directories containing the Distance_left include files.
+# Distance_left_IDL_DIRS - Directories containing the Distance_left IDL files.
+# Distance_left_LIBRARIES - Libraries needed to use Distance_left.
+# Distance_left_DEFINITIONS - Compiler flags for Distance_left.
+# Distance_left_VERSION - The version of Distance_left found.
+# Distance_left_VERSION_MAJOR - The major version of Distance_left found.
+# Distance_left_VERSION_MINOR - The minor version of Distance_left found.
+# Distance_left_VERSION_REVISION - The revision version of Distance_left found.
+# Distance_left_VERSION_CANDIDATE - The candidate version of Distance_left found.
+
+message(STATUS "Found Distance_left-@PROJECT_VERSION@")
+set(Distance_left_FOUND TRUE)
+
+find_package(<dependency> REQUIRED)
+
+#set(Distance_left_INCLUDE_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@"
+#    ${<dependency>_INCLUDE_DIRS}
+#    )
+#
+#set(Distance_left_IDL_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@/idl")
+set(Distance_left_INCLUDE_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@"
+    ${<dependency>_INCLUDE_DIRS}
+    )
+set(Distance_left_IDL_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@/idl")
+
+
+if(WIN32)
+    set(Distance_left_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_STATIC_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+else(WIN32)
+    set(Distance_left_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_SHARED_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+endif(WIN32)
+
+set(Distance_left_DEFINITIONS ${<dependency>_DEFINITIONS})
+
+set(Distance_left_VERSION @PROJECT_VERSION@)
+set(Distance_left_VERSION_MAJOR @PROJECT_VERSION_MAJOR@)
+set(Distance_left_VERSION_MINOR @PROJECT_VERSION_MINOR@)
+set(Distance_left_VERSION_REVISION @PROJECT_VERSION_REVISION@)
+set(Distance_left_VERSION_CANDIDATE @PROJECT_VERSION_CANDIDATE@)
+

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -shared -Wl,-soname,Input_0_ssm.so -o Input_0_ssm.so CMakeFiles/Input_0_ssm.dir/Input_0_ssm.cpp.o  -Wl,-rpath,/usr/local/lib: -lpthread -lRTC2 -lomniDynamic4 -lomniORB4 -lomnithread -lrtmCamera2 -lrtmManipulator2 /usr/local/lib/libssm.so 

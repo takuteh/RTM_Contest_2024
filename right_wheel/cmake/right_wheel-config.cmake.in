@@ -1,0 +1,54 @@
+# right_wheel CMake config file
+#
+# This file sets the following variables:
+# right_wheel_FOUND - Always TRUE.
+# right_wheel_INCLUDE_DIRS - Directories containing the right_wheel include files.
+# right_wheel_IDL_DIRS - Directories containing the right_wheel IDL files.
+# right_wheel_LIBRARIES - Libraries needed to use right_wheel.
+# right_wheel_DEFINITIONS - Compiler flags for right_wheel.
+# right_wheel_VERSION - The version of right_wheel found.
+# right_wheel_VERSION_MAJOR - The major version of right_wheel found.
+# right_wheel_VERSION_MINOR - The minor version of right_wheel found.
+# right_wheel_VERSION_REVISION - The revision version of right_wheel found.
+# right_wheel_VERSION_CANDIDATE - The candidate version of right_wheel found.
+
+message(STATUS "Found right_wheel-@PROJECT_VERSION@")
+set(right_wheel_FOUND TRUE)
+
+find_package(<dependency> REQUIRED)
+
+#set(right_wheel_INCLUDE_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@"
+#    ${<dependency>_INCLUDE_DIRS}
+#    )
+#
+#set(right_wheel_IDL_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@/idl")
+set(right_wheel_INCLUDE_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@"
+    ${<dependency>_INCLUDE_DIRS}
+    )
+set(right_wheel_IDL_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@/idl")
+
+
+if(WIN32)
+    set(right_wheel_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_STATIC_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+else(WIN32)
+    set(right_wheel_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_SHARED_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+endif(WIN32)
+
+set(right_wheel_DEFINITIONS ${<dependency>_DEFINITIONS})
+
+set(right_wheel_VERSION @PROJECT_VERSION@)
+set(right_wheel_VERSION_MAJOR @PROJECT_VERSION_MAJOR@)
+set(right_wheel_VERSION_MINOR @PROJECT_VERSION_MINOR@)
+set(right_wheel_VERSION_REVISION @PROJECT_VERSION_REVISION@)
+set(right_wheel_VERSION_CANDIDATE @PROJECT_VERSION_CANDIDATE@)
+

@@ -1,0 +1,163 @@
+﻿// -*- C++ -*-
+// <rtc-template block="description">
+/*!
+ * @file  Turning_Module.cpp
+ * @brief ModuleDescription
+ *
+ */
+// </rtc-template>
+
+#include "Turning_Module.h"
+
+// Module specification
+// <rtc-template block="module_spec">
+#if RTM_MAJOR_VERSION >= 2
+static const char* const turning_module_spec[] =
+#else
+static const char* turning_module_spec[] =
+#endif
+  {
+    "implementation_id", "Turning_Module",
+    "type_name",         "Turning_Module",
+    "description",       "ModuleDescription",
+    "version",           "1.0.0",
+    "vendor",            "VenderName",
+    "category",          "Category",
+    "activity_type",     "PERIODIC",
+    "kind",              "DataFlowComponent",
+    "max_instance",      "1",
+    "language",          "C++",
+    "lang_type",         "compile",
+    ""
+  };
+// </rtc-template>
+
+/*!
+ * @brief constructor
+ * @param manager Maneger Object
+ */
+Turning_Module::Turning_Module(RTC::Manager* manager)
+    // <rtc-template block="initializer">
+  : RTC::DataFlowComponentBase(manager),
+    m_inIn("in", m_in),
+    m_outOut("out", m_out)
+    // </rtc-template>
+{
+}
+
+/*!
+ * @brief destructor
+ */
+Turning_Module::~Turning_Module()
+{
+}
+
+
+
+RTC::ReturnCode_t Turning_Module::onInitialize()
+{
+  // Registration: InPort/OutPort/Service
+  // <rtc-template block="registration">
+  // Set InPort buffers
+  addInPort("in", m_inIn);
+  
+  // Set OutPort buffer
+  addOutPort("out", m_outOut);
+
+  
+  // Set service provider to Ports
+  
+  // Set service consumers to Ports
+  
+  // Set CORBA Service Ports
+  
+  // </rtc-template>
+
+  // <rtc-template block="bind_config">
+  // </rtc-template>
+
+  
+  return RTC::RTC_OK;
+}
+
+/*
+RTC::ReturnCode_t Turning_Module::onFinalize()
+{
+  return RTC::RTC_OK;
+}
+*/
+
+
+//RTC::ReturnCode_t Turning_Module::onStartup(RTC::UniqueId /*ec_id*/)
+//{
+//  return RTC::RTC_OK;
+//}
+
+
+//RTC::ReturnCode_t Turning_Module::onShutdown(RTC::UniqueId /*ec_id*/)
+//{
+//  return RTC::RTC_OK;
+//}
+
+
+RTC::ReturnCode_t Turning_Module::onActivated(RTC::UniqueId /*ec_id*/)
+{
+  return RTC::RTC_OK;
+}
+
+
+RTC::ReturnCode_t Turning_Module::onDeactivated(RTC::UniqueId /*ec_id*/)
+{
+  return RTC::RTC_OK;
+}
+
+
+RTC::ReturnCode_t Turning_Module::onExecute(RTC::UniqueId /*ec_id*/)
+{
+  return RTC::RTC_OK;
+}
+
+
+//RTC::ReturnCode_t Turning_Module::onAborting(RTC::UniqueId /*ec_id*/)
+//{
+//  return RTC::RTC_OK;
+//}
+
+
+//RTC::ReturnCode_t Turning_Module::onError(RTC::UniqueId /*ec_id*/)
+//{
+//  return RTC::RTC_OK;
+//}
+
+
+//RTC::ReturnCode_t Turning_Module::onReset(RTC::UniqueId /*ec_id*/)
+//{
+//  return RTC::RTC_OK;
+//}
+
+
+//RTC::ReturnCode_t Turning_Module::onStateUpdate(RTC::UniqueId /*ec_id*/)
+//{
+//  return RTC::RTC_OK;
+//}
+
+
+//RTC::ReturnCode_t Turning_Module::onRateChanged(RTC::UniqueId /*ec_id*/)
+//{
+//  return RTC::RTC_OK;
+//}
+
+
+
+extern "C"
+{
+ 
+  void Turning_ModuleInit(RTC::Manager* manager)
+  {
+    coil::Properties profile(turning_module_spec);
+    manager->registerFactory(profile,
+                             RTC::Create<Turning_Module>,
+                             RTC::Delete<Turning_Module>);
+  }
+  
+}

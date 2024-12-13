@@ -1,0 +1,23 @@
+Nov 01 00:11:33.840 INFO: manager: 2.0.2
+Nov 01 00:11:35.278 INFO: manager: Copyright (C) 2003-2024, Noriaki Ando and OpenRTM development team,
+Nov 01 00:11:35.278 INFO: manager:   Intelligent Systems Research Institute, AIST,
+Nov 01 00:11:35.278 INFO: manager: Copyright (C) 2024, Noriaki Ando and OpenRTM development team,
+Nov 01 00:11:35.278 INFO: manager:   Industrial Cyber-Physical Research Center, AIST,
+Nov 01 00:11:35.278 INFO: manager:   All right reserved.
+Nov 01 00:11:35.278 INFO: manager: Manager starting.
+Nov 01 00:11:35.278 INFO: manager: Starting local logging.
+Nov 01 00:11:35.694 INFO: NamingManager: NameServer connection failed: corba/localhost
+Nov 01 00:11:35.695 INFO: ManagerServant: Named manager reference (INS) was successfully created.
+Nov 01 00:11:35.696 WARNING: ManagerServant: Master manager not found
+Nov 01 00:11:35.699 INFO: LocalServiceAdmin: All the local services are enabled.
+Nov 01 00:11:35.718 INFO: manager: Component type conf file: Forward_Module.conf loaded.
+Nov 01 00:11:35.719 INFO: ec_base: setRate(1000000.000000) done
+Nov 01 00:11:35.719 INFO: ec_base: setRate(1000.000000) done
+Nov 01 00:11:35.719 INFO: Forward_Module0: 1 execution context was created.
+Nov 01 00:11:35.722 INFO: Forward_Module0: Initial active configuration set is default.
+Nov 01 00:11:45.732 INFO: NamingManager: NameServer connection failed: corba/localhost
+Nov 01 00:11:45.734 INFO: ManagerServant: Master manager not found
+Nov 01 00:11:55.739 INFO: NamingManager: NameServer connection failed: corba/localhost
+Nov 01 00:11:55.740 INFO: ManagerServant: Master manager not found
+Nov 01 00:12:05.746 INFO: NamingManager: NameServer connection failed: corba/localhost
+Nov 01 00:12:05.748 INFO: ManagerServant: Master manager not found

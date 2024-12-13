@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Turning_ModuleComp.dir/Turning_ModuleComp.cpp.o CMakeFiles/Turning_ModuleComp.dir/Turning_Module.cpp.o -o Turning_ModuleComp  -lpthread -lRTC2 -lomniDynamic4 -lomniORB4 -lomnithread -lrtmCamera2 -lrtmManipulator2 

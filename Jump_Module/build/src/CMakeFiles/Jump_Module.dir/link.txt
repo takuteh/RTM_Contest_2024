@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -shared -Wl,-soname,Jump_Module.so -o Jump_Module.so CMakeFiles/Jump_Module.dir/Jump_Module.cpp.o  -lpthread -lRTC2 -lomniDynamic4 -lomniORB4 -lomnithread -lrtmCamera2 -lrtmManipulator2 

@@ -1,0 +1,54 @@
+# mpu6050 CMake config file
+#
+# This file sets the following variables:
+# mpu6050_FOUND - Always TRUE.
+# mpu6050_INCLUDE_DIRS - Directories containing the mpu6050 include files.
+# mpu6050_IDL_DIRS - Directories containing the mpu6050 IDL files.
+# mpu6050_LIBRARIES - Libraries needed to use mpu6050.
+# mpu6050_DEFINITIONS - Compiler flags for mpu6050.
+# mpu6050_VERSION - The version of mpu6050 found.
+# mpu6050_VERSION_MAJOR - The major version of mpu6050 found.
+# mpu6050_VERSION_MINOR - The minor version of mpu6050 found.
+# mpu6050_VERSION_REVISION - The revision version of mpu6050 found.
+# mpu6050_VERSION_CANDIDATE - The candidate version of mpu6050 found.
+
+message(STATUS "Found mpu6050-@PROJECT_VERSION@")
+set(mpu6050_FOUND TRUE)
+
+find_package(<dependency> REQUIRED)
+
+#set(mpu6050_INCLUDE_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@"
+#    ${<dependency>_INCLUDE_DIRS}
+#    )
+#
+#set(mpu6050_IDL_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@/idl")
+set(mpu6050_INCLUDE_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@"
+    ${<dependency>_INCLUDE_DIRS}
+    )
+set(mpu6050_IDL_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@/idl")
+
+
+if(WIN32)
+    set(mpu6050_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_STATIC_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+else(WIN32)
+    set(mpu6050_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_SHARED_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+endif(WIN32)
+
+set(mpu6050_DEFINITIONS ${<dependency>_DEFINITIONS})
+
+set(mpu6050_VERSION @PROJECT_VERSION@)
+set(mpu6050_VERSION_MAJOR @PROJECT_VERSION_MAJOR@)
+set(mpu6050_VERSION_MINOR @PROJECT_VERSION_MINOR@)
+set(mpu6050_VERSION_REVISION @PROJECT_VERSION_REVISION@)
+set(mpu6050_VERSION_CANDIDATE @PROJECT_VERSION_CANDIDATE@)
+

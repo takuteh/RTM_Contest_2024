@@ -1,0 +1,27 @@
+Oct 23 05:06:29.474 INFO: manager: 2.0.2
+Oct 23 05:06:29.474 INFO: manager: Copyright (C) 2003-2024, Noriaki Ando and OpenRTM development team,
+Oct 23 05:06:29.475 INFO: manager:   Intelligent Systems Research Institute, AIST,
+Oct 23 05:06:29.475 INFO: manager: Copyright (C) 2024, Noriaki Ando and OpenRTM development team,
+Oct 23 05:06:29.475 INFO: manager:   Industrial Cyber-Physical Research Center, AIST,
+Oct 23 05:06:29.475 INFO: manager:   All right reserved.
+Oct 23 05:06:29.475 INFO: manager: Manager starting.
+Oct 23 05:06:29.476 INFO: manager: Starting local logging.
+Oct 23 05:06:29.492 WARNING: NamingOnCorba: No endpoint for the CORBA naming service (localhost) was found.
+Oct 23 05:06:29.492 INFO: NamingManager: NameServer connection succeeded: corba/localhost
+Oct 23 05:06:29.494 INFO: ManagerServant: Named manager reference (INS) was successfully created.
+Oct 23 05:06:29.496 WARNING: ManagerServant: Master manager not found
+Oct 23 05:06:29.498 INFO: LocalServiceAdmin: All the local services are enabled.
+Oct 23 05:06:29.500 INFO: ec_base: setRate(1000000.000000) done
+Oct 23 05:06:29.501 INFO: ec_base: setRate(1000.000000) done
+Oct 23 05:06:29.501 INFO: left_wheel0: 1 execution context was created.
+Oct 23 05:06:29.502 INFO: left_wheel0: Initial active configuration set is default.
+Oct 23 05:06:39.515 INFO: ManagerServant: Master manager not found
+Oct 23 05:06:48.000 WARNING: SdoServiceAdmin: No available SDO service in the factory: 
+Oct 23 05:06:49.522 INFO: ManagerServant: Master manager not found
+Oct 23 05:06:59.530 INFO: ManagerServant: Master manager not found
+Oct 23 05:07:09.537 INFO: ManagerServant: Master manager not found
+Oct 23 05:07:19.545 INFO: ManagerServant: Master manager not found
+Oct 23 05:07:29.552 INFO: ManagerServant: Master manager not found
+Oct 23 05:07:39.561 INFO: ManagerServant: Master manager not found
+Oct 23 05:07:43.375 WARNING: ec_base: The component is not responding.
+Oct 23 05:07:43.375 ERROR: ec_base: Unknown error: Invalid state transition.

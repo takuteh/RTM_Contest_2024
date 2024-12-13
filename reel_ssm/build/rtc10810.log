@@ -1,0 +1,31 @@
+Nov 11 01:32:51.911 INFO: manager: 2.0.2
+Nov 11 01:32:51.912 INFO: manager: Copyright (C) 2003-2024, Noriaki Ando and OpenRTM development team,
+Nov 11 01:32:51.912 INFO: manager:   Intelligent Systems Research Institute, AIST,
+Nov 11 01:32:51.912 INFO: manager: Copyright (C) 2024, Noriaki Ando and OpenRTM development team,
+Nov 11 01:32:51.912 INFO: manager:   Industrial Cyber-Physical Research Center, AIST,
+Nov 11 01:32:51.912 INFO: manager:   All right reserved.
+Nov 11 01:32:51.912 INFO: manager: Manager starting.
+Nov 11 01:32:51.912 INFO: manager: Starting local logging.
+Nov 11 01:32:51.943 WARNING: NamingOnCorba: No endpoint for the CORBA naming service (localhost) was found.
+Nov 11 01:32:51.943 INFO: NamingManager: NameServer connection succeeded: corba/localhost
+Nov 11 01:32:51.946 INFO: ManagerServant: Named manager reference (INS) was successfully created.
+Nov 11 01:32:51.949 WARNING: ManagerServant: Master manager not found
+Nov 11 01:32:51.955 INFO: LocalServiceAdmin: All the local services are enabled.
+Nov 11 01:32:51.958 INFO: ec_base: setRate(1000000.000000) done
+Nov 11 01:32:51.958 INFO: ec_base: setRate(1000.000000) done
+Nov 11 01:32:51.959 INFO: reel_ssm0: 1 execution context was created.
+Nov 11 01:32:51.961 INFO: reel_ssm0: Initial active configuration set is default.
+Nov 11 01:33:01.974 INFO: ManagerServant: Master manager not found
+Nov 11 01:33:11.982 INFO: ManagerServant: Master manager not found
+Nov 11 01:33:21.989 INFO: ManagerServant: Master manager not found
+Nov 11 01:33:31.997 INFO: ManagerServant: Master manager not found
+Nov 11 01:33:42.005 INFO: ManagerServant: Master manager not found
+Nov 11 01:33:52.014 INFO: ManagerServant: Master manager not found
+Nov 11 01:34:02.023 INFO: ManagerServant: Master manager not found
+Nov 11 01:34:12.031 INFO: ManagerServant: Master manager not found
+Nov 11 01:34:20.952 INFO: ec_base: setRate(1000.000000) done
+Nov 11 01:34:22.038 INFO: ManagerServant: Master manager not found
+Nov 11 01:34:32.047 INFO: ManagerServant: Master manager not found
+Nov 11 01:34:42.055 INFO: ManagerServant: Master manager not found
+Nov 11 01:34:52.066 INFO: ManagerServant: Master manager not found
+Nov 11 01:35:02.077 INFO: ManagerServant: Master manager not found

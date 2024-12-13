@@ -1,0 +1,54 @@
+# Input_m1_ssm CMake config file
+#
+# This file sets the following variables:
+# Input_m1_ssm_FOUND - Always TRUE.
+# Input_m1_ssm_INCLUDE_DIRS - Directories containing the Input_m1_ssm include files.
+# Input_m1_ssm_IDL_DIRS - Directories containing the Input_m1_ssm IDL files.
+# Input_m1_ssm_LIBRARIES - Libraries needed to use Input_m1_ssm.
+# Input_m1_ssm_DEFINITIONS - Compiler flags for Input_m1_ssm.
+# Input_m1_ssm_VERSION - The version of Input_m1_ssm found.
+# Input_m1_ssm_VERSION_MAJOR - The major version of Input_m1_ssm found.
+# Input_m1_ssm_VERSION_MINOR - The minor version of Input_m1_ssm found.
+# Input_m1_ssm_VERSION_REVISION - The revision version of Input_m1_ssm found.
+# Input_m1_ssm_VERSION_CANDIDATE - The candidate version of Input_m1_ssm found.
+
+message(STATUS "Found Input_m1_ssm-@PROJECT_VERSION@")
+set(Input_m1_ssm_FOUND TRUE)
+
+find_package(<dependency> REQUIRED)
+
+#set(Input_m1_ssm_INCLUDE_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@"
+#    ${<dependency>_INCLUDE_DIRS}
+#    )
+#
+#set(Input_m1_ssm_IDL_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@/idl")
+set(Input_m1_ssm_INCLUDE_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@"
+    ${<dependency>_INCLUDE_DIRS}
+    )
+set(Input_m1_ssm_IDL_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@/idl")
+
+
+if(WIN32)
+    set(Input_m1_ssm_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_STATIC_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+else(WIN32)
+    set(Input_m1_ssm_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_SHARED_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+endif(WIN32)
+
+set(Input_m1_ssm_DEFINITIONS ${<dependency>_DEFINITIONS})
+
+set(Input_m1_ssm_VERSION @PROJECT_VERSION@)
+set(Input_m1_ssm_VERSION_MAJOR @PROJECT_VERSION_MAJOR@)
+set(Input_m1_ssm_VERSION_MINOR @PROJECT_VERSION_MINOR@)
+set(Input_m1_ssm_VERSION_REVISION @PROJECT_VERSION_REVISION@)
+set(Input_m1_ssm_VERSION_CANDIDATE @PROJECT_VERSION_CANDIDATE@)
+

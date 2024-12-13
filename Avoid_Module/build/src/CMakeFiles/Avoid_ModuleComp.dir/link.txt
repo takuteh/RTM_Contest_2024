@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Avoid_ModuleComp.dir/Avoid_ModuleComp.cpp.o CMakeFiles/Avoid_ModuleComp.dir/Avoid_Module.cpp.o -o Avoid_ModuleComp  -lpthread -lRTC2 -lomniDynamic4 -lomniORB4 -lomnithread -lrtmCamera2 -lrtmManipulator2 

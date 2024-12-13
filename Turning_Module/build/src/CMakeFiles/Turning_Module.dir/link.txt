@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -shared -Wl,-soname,Turning_Module.so -o Turning_Module.so CMakeFiles/Turning_Module.dir/Turning_Module.cpp.o  -lpthread -lRTC2 -lomniDynamic4 -lomniORB4 -lomnithread -lrtmCamera2 -lrtmManipulator2 

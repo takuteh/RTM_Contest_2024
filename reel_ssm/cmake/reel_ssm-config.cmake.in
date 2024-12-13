@@ -1,0 +1,54 @@
+# reel_ssm CMake config file
+#
+# This file sets the following variables:
+# reel_ssm_FOUND - Always TRUE.
+# reel_ssm_INCLUDE_DIRS - Directories containing the reel_ssm include files.
+# reel_ssm_IDL_DIRS - Directories containing the reel_ssm IDL files.
+# reel_ssm_LIBRARIES - Libraries needed to use reel_ssm.
+# reel_ssm_DEFINITIONS - Compiler flags for reel_ssm.
+# reel_ssm_VERSION - The version of reel_ssm found.
+# reel_ssm_VERSION_MAJOR - The major version of reel_ssm found.
+# reel_ssm_VERSION_MINOR - The minor version of reel_ssm found.
+# reel_ssm_VERSION_REVISION - The revision version of reel_ssm found.
+# reel_ssm_VERSION_CANDIDATE - The candidate version of reel_ssm found.
+
+message(STATUS "Found reel_ssm-@PROJECT_VERSION@")
+set(reel_ssm_FOUND TRUE)
+
+find_package(<dependency> REQUIRED)
+
+#set(reel_ssm_INCLUDE_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@"
+#    ${<dependency>_INCLUDE_DIRS}
+#    )
+#
+#set(reel_ssm_IDL_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@/idl")
+set(reel_ssm_INCLUDE_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@"
+    ${<dependency>_INCLUDE_DIRS}
+    )
+set(reel_ssm_IDL_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@/idl")
+
+
+if(WIN32)
+    set(reel_ssm_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_STATIC_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+else(WIN32)
+    set(reel_ssm_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_SHARED_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+endif(WIN32)
+
+set(reel_ssm_DEFINITIONS ${<dependency>_DEFINITIONS})
+
+set(reel_ssm_VERSION @PROJECT_VERSION@)
+set(reel_ssm_VERSION_MAJOR @PROJECT_VERSION_MAJOR@)
+set(reel_ssm_VERSION_MINOR @PROJECT_VERSION_MINOR@)
+set(reel_ssm_VERSION_REVISION @PROJECT_VERSION_REVISION@)
+set(reel_ssm_VERSION_CANDIDATE @PROJECT_VERSION_CANDIDATE@)
+

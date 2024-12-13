@@ -1,0 +1,25 @@
+Dec 13 06:13:40.342 INFO: manager: 2.0.2
+Dec 13 06:13:40.342 INFO: manager: Copyright (C) 2003-2024, Noriaki Ando and OpenRTM development team,
+Dec 13 06:13:40.342 INFO: manager:   Intelligent Systems Research Institute, AIST,
+Dec 13 06:13:40.342 INFO: manager: Copyright (C) 2024, Noriaki Ando and OpenRTM development team,
+Dec 13 06:13:40.342 INFO: manager:   Industrial Cyber-Physical Research Center, AIST,
+Dec 13 06:13:40.342 INFO: manager:   All right reserved.
+Dec 13 06:13:40.342 INFO: manager: Manager starting.
+Dec 13 06:13:40.342 INFO: manager: Starting local logging.
+Dec 13 06:13:40.360 WARNING: NamingOnCorba: No endpoint for the CORBA naming service (localhost) was found.
+Dec 13 06:13:40.360 INFO: NamingManager: NameServer connection succeeded: corba/localhost
+Dec 13 06:13:40.361 INFO: ManagerServant: Named manager reference (INS) was successfully created.
+Dec 13 06:13:40.363 WARNING: ManagerServant: Master manager not found
+Dec 13 06:13:40.365 INFO: LocalServiceAdmin: All the local services are enabled.
+Dec 13 06:13:40.370 INFO: manager: Component type conf file: reel_ssm.conf loaded.
+Dec 13 06:13:40.371 INFO: ec_base: setRate(1000000.000000) done
+Dec 13 06:13:40.371 INFO: ec_base: setRate(1000.000000) done
+Dec 13 06:13:40.371 INFO: reel_ssm0: 1 execution context was created.
+Dec 13 06:13:40.372 INFO: reel_ssm0: Initial active configuration set is default.
+Dec 13 06:13:50.384 INFO: ManagerServant: Master manager not found
+Dec 13 06:14:00.392 INFO: ManagerServant: Master manager not found
+Dec 13 06:14:10.406 INFO: ManagerServant: Master manager not found
+Dec 13 06:14:20.414 INFO: ManagerServant: Master manager not found
+Dec 13 06:14:30.482 INFO: ManagerServant: Master manager not found
+Dec 13 06:14:40.519 INFO: ManagerServant: Master manager not found
+Dec 13 06:14:50.530 INFO: ManagerServant: Master manager not found

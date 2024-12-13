@@ -1,0 +1,35 @@
+Nov 01 02:02:59.169 INFO: manager: 2.0.2
+Nov 01 02:02:59.169 INFO: manager: Copyright (C) 2003-2024, Noriaki Ando and OpenRTM development team,
+Nov 01 02:02:59.169 INFO: manager:   Intelligent Systems Research Institute, AIST,
+Nov 01 02:02:59.169 INFO: manager: Copyright (C) 2024, Noriaki Ando and OpenRTM development team,
+Nov 01 02:02:59.169 INFO: manager:   Industrial Cyber-Physical Research Center, AIST,
+Nov 01 02:02:59.169 INFO: manager:   All right reserved.
+Nov 01 02:02:59.170 INFO: manager: Manager starting.
+Nov 01 02:02:59.170 INFO: manager: Starting local logging.
+Nov 01 02:02:59.188 WARNING: NamingOnCorba: No endpoint for the CORBA naming service (localhost) was found.
+Nov 01 02:02:59.189 INFO: NamingManager: NameServer connection succeeded: corba/localhost
+Nov 01 02:02:59.190 INFO: ManagerServant: Named manager reference (INS) was successfully created.
+Nov 01 02:02:59.192 WARNING: ManagerServant: Master manager not found
+Nov 01 02:02:59.195 INFO: LocalServiceAdmin: All the local services are enabled.
+Nov 01 02:02:59.198 INFO: ec_base: setRate(1000000.000000) done
+Nov 01 02:02:59.198 INFO: ec_base: setRate(1000.000000) done
+Nov 01 02:02:59.198 INFO: Avoid_Module0: 1 execution context was created.
+Nov 01 02:02:59.205 INFO: Avoid_Module0: Initial active configuration set is default.
+Nov 01 02:03:09.219 INFO: ManagerServant: Master manager not found
+Nov 01 02:03:19.226 INFO: ManagerServant: Master manager not found
+Nov 01 02:03:29.235 INFO: ManagerServant: Master manager not found
+Nov 01 02:03:39.298 INFO: ManagerServant: Master manager not found
+Nov 01 02:03:49.306 INFO: ManagerServant: Master manager not found
+Nov 01 02:03:59.315 INFO: ManagerServant: Master manager not found
+Nov 01 02:04:09.322 INFO: ManagerServant: Master manager not found
+Nov 01 02:04:19.330 INFO: ManagerServant: Master manager not found
+Nov 01 02:04:29.338 INFO: ManagerServant: Master manager not found
+Nov 01 02:04:38.079 INFO: ec_base: setRate(1000.000000) done
+Nov 01 02:04:39.348 INFO: ManagerServant: Master manager not found
+Nov 01 02:04:49.355 INFO: ManagerServant: Master manager not found
+Nov 01 02:04:59.364 INFO: ManagerServant: Master manager not found
+Nov 01 02:05:00.017 WARNING: in_distance_right: buffer empty
+Nov 01 02:05:09.373 INFO: ManagerServant: Master manager not found
+Nov 01 02:05:19.384 INFO: ManagerServant: Master manager not found
+Nov 01 02:05:29.394 INFO: ManagerServant: Master manager not found
+Nov 01 02:05:39.404 INFO: ManagerServant: Master manager not found

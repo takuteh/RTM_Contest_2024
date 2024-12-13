@@ -1,0 +1,35 @@
+Oct 31 12:27:09.509 INFO: manager: 2.0.2
+Oct 31 12:27:09.511 INFO: manager: Copyright (C) 2003-2024, Noriaki Ando and OpenRTM development team,
+Oct 31 12:27:09.511 INFO: manager:   Intelligent Systems Research Institute, AIST,
+Oct 31 12:27:09.511 INFO: manager: Copyright (C) 2024, Noriaki Ando and OpenRTM development team,
+Oct 31 12:27:09.511 INFO: manager:   Industrial Cyber-Physical Research Center, AIST,
+Oct 31 12:27:09.511 INFO: manager:   All right reserved.
+Oct 31 12:27:09.511 INFO: manager: Manager starting.
+Oct 31 12:27:09.511 INFO: manager: Starting local logging.
+Oct 31 12:27:09.649 WARNING: NamingOnCorba: No endpoint for the CORBA naming service (localhost) was found.
+Oct 31 12:27:09.650 INFO: NamingManager: NameServer connection succeeded: corba/localhost
+Oct 31 12:27:09.654 INFO: ManagerServant: Named manager reference (INS) was successfully created.
+Oct 31 12:27:09.659 WARNING: ManagerServant: Master manager not found
+Oct 31 12:27:09.671 INFO: LocalServiceAdmin: All the local services are enabled.
+Oct 31 12:27:09.707 INFO: ec_base: setRate(1000000.000000) done
+Oct 31 12:27:09.708 INFO: ec_base: setRate(1000.000000) done
+Oct 31 12:27:09.709 INFO: Avoid_Module0: 1 execution context was created.
+Oct 31 12:27:09.726 INFO: Avoid_Module0: Initial active configuration set is default.
+Oct 31 12:27:19.752 INFO: ManagerServant: Master manager not found
+Oct 31 12:27:22.870 ERROR: ec_worker: State of the RTC is not INACTIVE_STATE.
+Oct 31 12:27:29.761 INFO: ManagerServant: Master manager not found
+Oct 31 12:27:39.769 INFO: ManagerServant: Master manager not found
+Oct 31 12:27:49.779 INFO: ManagerServant: Master manager not found
+Oct 31 12:27:59.788 INFO: ManagerServant: Master manager not found
+Oct 31 12:28:09.794 INFO: ManagerServant: Master manager not found
+Oct 31 12:28:14.284 ERROR: ec_worker: State of the RTC is not INACTIVE_STATE.
+Oct 31 12:28:19.802 INFO: ManagerServant: Master manager not found
+Oct 31 12:28:29.812 INFO: ManagerServant: Master manager not found
+Oct 31 12:28:39.819 INFO: ManagerServant: Master manager not found
+Oct 31 12:28:49.829 INFO: ManagerServant: Master manager not found
+Oct 31 12:28:59.836 INFO: ManagerServant: Master manager not found
+Oct 31 12:29:09.846 INFO: ManagerServant: Master manager not found
+Oct 31 12:29:19.853 INFO: ManagerServant: Master manager not found
+Oct 31 12:29:29.863 INFO: ManagerServant: Master manager not found
+Oct 31 12:29:39.874 INFO: ManagerServant: Master manager not found
+Oct 31 12:29:49.884 INFO: ManagerServant: Master manager not found

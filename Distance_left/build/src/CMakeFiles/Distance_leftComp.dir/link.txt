@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Distance_leftComp.dir/Distance_leftComp.cpp.o CMakeFiles/Distance_leftComp.dir/Distance_left.cpp.o CMakeFiles/Distance_leftComp.dir/__/mysrc/distance.cpp.o -o Distance_leftComp  -lpthread -lRTC2 -lomniDynamic4 -lomniORB4 -lomnithread -lrtmCamera2 -lrtmManipulator2 
